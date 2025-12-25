@@ -18,7 +18,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot<AppState>({book: BookReducer}),
+    StoreModule.forRoot<AppState>({ book: BookReducer }),
     EffectsModule.forRoot([BookEffects]),
     StoreDevtoolsModule.instrument()
   ],
